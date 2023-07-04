@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.sticky {
+  padding: 15px 0;
+  background: linear-gradient(130deg,
+      hsl(193deg 68% 52%) 0%,
+      hsl(78deg 43% 74%) 34%,
+      hsl(46deg 56% 73%) 51%,
+      hsl(301deg 25% 60%) 100%);
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo a span {
+  background: -webkit-linear-gradient(360deg,
+      hsl(46, 88%, 57%) 100%,
+      hsl(301deg 25% 60%) 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+
+}
+
+.navbar .logo a span {
+  color: #fff;
+}
+
+.navbar.sticky .logo a span {
+  color: #fff;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: azure;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: rgb(24, 234, 227);
+}
+
+.navbar.sticky .logo a span {
+  color: #fff;
+}
+.menu-btn i{
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: max-content;
+  background-image: linear-gradient(335deg,
+      hsl(193deg 68% 52%) 0%,
+      hsl(78deg 43% 74%) 34%,
+      hsl(46deg 56% 73%) 51%,
+      hsl(301deg 25% 60%) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+img {
+  width: 100%;
+
+}
+
+.main {
+  display: flex;
+  padding-top: 6.5%;
+}
+
+
+.alpha {
+
+  width: 40%;
+  margin-right: 5%;
+
+}
+
+.beta {
+  width: 30%;
+  margin: auto;
+}
+
+i:hover,img:hover,p1:hover,li:hover{
+  scale: 1.2;
+  transition: 1s ease-in-out;
+  rotate: 5deg;
+  
+}
+i:not(:hover),img:not(:hover),p1:not(:hover),li:not(:hover){
+  scale: 1;
+  transition: 1.5s ease;
+  rotate: 0deg;
+  
+}
+
+
+.beta img:active{
+  scale: 1.8;
+}
+
+
+
+
+.gamma {
+
+  width: 40%;
+  margin-left: 5%;
+}
+
+
+
+
+.container div {
+  display: flex;
+  margin: 10% auto;
+}
+
+.alpha img,
+.gamma img {
+  height: 20%;
+  width: 20%;
+}
+
+p1,
+img {
+  display: flex-inline;
+  margin-top: auto;
+  margin-bottom: auto;
+
+
+}
+
+.del {
+  font-size: 2000px;
+  color: orange;
+}
+
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+p1 {
+  padding: 5% 5% 5%5%;
+  font-weight: 600;
+}
+
+.mid2 img {
+  margin-left: 20%
+}
+
+.mid img {
+  margin-right: 20%
+}
+
+p {
+  text-align: center;
+  font-weight: 200%;
+}
+
+.media {
+  text-align: center;
+
+
+
+}
+
+.bi {
+  display: inline-block;
+  font-size: 200%;
+  margin: 1%;
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+
+  /* CSS rules for mobile devices */
+  p1 {
+    font-size: 55%;
+  }
+
+  .beta {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  .alpha,
+  .gamma {
+    margin: auto 0px;
+    width: 50%;
+    margin: 5%;
+  }
+
+  html {
+    height: 100vh;
+  }
+
+  .main {
+    margin-top: 10%;
+  }
+
+
+  .beta {
+    display: none;
+  }
+
+  .mid img,
+  .mid2 img {
+    margin: 0%;
+  }
+
+
+
+  .profilem {
+    margin: auto;
+    width: 50%;
+
+
+  }
+
+  .mobprofile {
+    margin-top: 64%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* CSS rules for tablet devices */
+  .profilem {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Styles for laptop devices */
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+  /* CSS rules for laptop devices */
+  .profilem {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Styles for desktop devices */
+@media screen and (min-width: 1367px) {
+
+  /* CSS rules for desktop devices */
+  .profilem {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
