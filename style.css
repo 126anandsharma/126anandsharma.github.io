@@ -232,6 +232,10 @@ p {
     font-size: 55%;
   }
 
+  html {
+  height: max-content;
+    }
+
   .beta {
     padding-left: 0%;
     padding-right: 0%;
@@ -287,6 +291,10 @@ p {
 
   /* CSS rules for tablet devices */
   .profilem {
+html {
+  height: max-content;
+    }
+
     display: none;
   }
 
@@ -299,6 +307,9 @@ p {
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 
   /* CSS rules for laptop devices */
+html {
+  height: max-content;
+    }
   .profilem {
     display: none;
   }
@@ -312,6 +323,11 @@ p {
 @media screen and (min-width: 1367px) {
 
   /* CSS rules for desktop devices */
+
+html {
+  height: max-content;
+    }
+
   .profilem {
     display: none;
   }
