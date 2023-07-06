@@ -8,3 +8,8 @@ const navbar = document.querySelector('.navbar');
                 navbar.classList.remove('sticky');
             }
         });
+
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    })
