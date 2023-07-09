@@ -4,19 +4,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-html{
-  scroll-behavior: smooth;
-}
-::-webkit-scrollbar{
-  width: 10px;
-}
-
-::-webkit-scrollbar-track{
-  background: #888;
-}
-
-::-webkit-scrollbar-thun:hover{
-  background: #555;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* all similar styling */
@@ -77,12 +67,6 @@ section .title::after {
 }
 
 
-
-
-a {
-  text-decoration: none;
-  color: black;
-}
 
 /* navbar styling starts */
 
@@ -160,51 +144,11 @@ a {
 }
 
 .menu-btn i {
-  position: fixed;
   color: #fff;
   font-size: 150%;
   cursor: pointer;
   display: none;
 
-}
-
-
-
-/* menu btn styling starts */
-.menu-btn {
-  color: #fff;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
-}
-
-.scroll-up-btn{
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #43e2e8;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color:#fff;
-  z-index: 999;
-  font-size: 30px;
-  border-radius:6px;
-  border-bottom-width:2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events:none;
-  transition: all 0.3s ease;
-}
-
-.scroll-up-btn.show{
-  bottom:30px;
-  opacity:1;
-  pointer-events: auto;
-}
-.scroll-up-btn:hover{
-  filter: brightness(90%);
 }
 
 
@@ -602,20 +546,6 @@ section .about-content .right {
   background: linear-gradient(rgba(0, 0, 0, 0.6), #e843e0);
 }
 
-
-/* .teams {
-  color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #43e2e8);
-}
-
-.teams .title::before {
-  background: #fff;
-}
- */
-
-
-
-
 .teams .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -842,9 +772,6 @@ form{
 }
 
 
-.contact-form{
-}
-
 .contact-content{
   width: fit-content;
   padding: 5%;
@@ -854,6 +781,8 @@ label{
   margin: 2%;
 }
 /* footer section styling */
+
+
 footer{
   background: #111;
   padding: 15px 23px;
@@ -867,6 +796,14 @@ footer span a{
 footer span a:hover{
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 1300px) {
@@ -1024,9 +961,9 @@ footer span a:hover{
 
   .navbar .menu {
     position: fixed;
-    height: 100cvh;
+    height: 100vh;
     width: 100%;
-    left: 100%;
+    left: -100%;
     top: 0;
     background: #111;
     text-align: center;
