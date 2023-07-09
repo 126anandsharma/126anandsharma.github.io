@@ -10,14 +10,14 @@ const navbar = document.querySelector('.navbar');
         });
 
 
-        $('.navbar .menu li a').click(function(){
-            $('html').css("scrollBehavior","smooth");
-        });
+    //     $('.navbar .menu li a').click(function(){
+    //         $('html').css("scrollBehavior","smooth");
+    //     });
 
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+    // $('.menu-btn').click(function(){
+    //     $('.navbar .menu').toggleClass("active");
+    //     $('.menu-btn i').toggleClass("active");
+    // });
 
 
     // owl carousel script
