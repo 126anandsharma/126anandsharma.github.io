@@ -262,7 +262,7 @@ p {
 /*................. all similar styling */
 
 section {
-  padding: 20px 0 ;
+  padding: 30px 0 ;
 }
 .max-width{
   max-width: 1300px;
@@ -282,6 +282,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20%;
 }
 section .title {
   position: relative;
@@ -317,6 +318,10 @@ section .title::after {
 }
 
 /* section styling starts */
+.about{
+  height: fit-content;
+}
+
 .about .title::after {
   content: "Who i am";
 }
@@ -345,8 +350,7 @@ section .about-content .right {
 
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 5px;
-  
+  margin-bottom: 10px;
 }
 
 .about .about-content .right .text span {
@@ -357,6 +361,8 @@ section .about-content .right {
 .about .about-content .right p0{
   height: 30%;
   text-align: justify;
+  
+
 }
 
 .about .about-content .right a {
@@ -366,7 +372,7 @@ section .about-content .right {
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
-  margin-top: 5px;
+  margin-top: 20px;
   border-radius: 6px;
   border: 2px solid rgb(77, 214, 214);
   transition: all 0.3s ease;
@@ -1239,8 +1245,11 @@ footer span a:hover{
 
 .contact .contact-content .column{
   width: 100%;
+  position: relative;
+  top: 10vh;
+  
 }
 .contact .contact-content{
-  margin-bottom: 0%;
+  padding-top: 0%;
 }
 }
