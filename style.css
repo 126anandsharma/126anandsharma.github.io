@@ -60,7 +60,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: #111;
+  background: grey;
   transform: translateX(-50%);
 }
 
@@ -69,10 +69,10 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: aqua;
+  color:white;
   padding:0 5px;
   border-radius: 6px;
-  background: #fff;
+  background: gray;
   transform: translateX(-50%);
 }
 
@@ -415,14 +415,14 @@ section .about-content .right {
 
 .about .about-content .right a {
   display: inline-block;
-  background: aqua;
+  background: rgb(77, 214, 214);
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid aqua;
+  border: 2px solid rgb(77, 214, 214);
   transition: all 0.3s ease;
 }
 
@@ -436,12 +436,7 @@ section .about-content .right {
 /* skils styling starts */
 
 .skills .title::after {
-  background: #111;
   content: " what i know";
-}
-
-.skills .title::before {
-  background: black;
 }
 
 .skills .skil-content .card {
@@ -479,6 +474,8 @@ section .about-content .right {
   font-size: 25px;
   font-weight: 500;
   margin: 1px 0 7px 0;
+  
+  
 }
 
 /* ..................work section styling starts...... */
@@ -535,7 +532,6 @@ section .about-content .right {
 
 .layer h3 {
   font-weight: 500;
-  /* margin-bottom: 20px; */
 }
 
 .layer i {
@@ -570,7 +566,7 @@ section .about-content .right {
   top: -20vh;
   margin: 0px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid #111;
   padding: 10px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -580,7 +576,7 @@ section .about-content .right {
 }
 
 .portfolio .btn:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #f21919);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #3bb8e2);
   ;
 }
 
@@ -808,6 +804,7 @@ form{
   display: flex;
   position: relative;
   top: -10vh;
+  margin-bottom: -18%;
 }
 
 
