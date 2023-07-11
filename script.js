@@ -28,6 +28,30 @@ const navbar = document.querySelector('.navbar');
             }
         });
 
+        document.addEventListener('click', function(event) {
+          var menu = document.querySelector('.navbar .menu');
+          var menuBtn = document.querySelector('.navbar .menu-btn');
+          var targetElement = event.target;
+      
+          // Check if the clicked element is outside of the menu or the menu button
+          if (!menu.contains(targetElement) && !menuBtn.contains(targetElement)) {
+            menu.classList.remove('active');
+          }
+        });
+      
+        // Toggle the active class for the menu on menu button click
+        var menuBtn = document.querySelector('.navbar .menu-btn');
+        menuBtn.addEventListener('click', function() {
+          var menu = document.querySelector('.navbar .menu');
+          menu.classList.toggle('active');
+        });
+      
+
+      //   $('.menu-btn').click(function(){
+      //     $('.navbar .menu').toggleClass("active");
+      //     $('.menu-btn i').toggleClass("active");
+      // });
+
 
 
     // owl carousel script
@@ -53,6 +77,7 @@ const navbar = document.querySelector('.navbar');
 
     });
 
+    
     
   
     

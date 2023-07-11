@@ -113,16 +113,32 @@ html {
 }
 
 .navbar .menu li {
-  list-style: none;
+  
   display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
 }
 
 .navbar .menu li a {
-  color: azure;
+  color: #fff;
+  text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
   transition: color 0.3s ease;
+}
+.navbar .menu li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.navbar .menu li a:hover::after{
+  width: 100%;
 }
 
 .navbar .menu li a:hover {
@@ -304,7 +320,7 @@ section {
   margin: auto;
 }
 
-.about, .title, .skills, .teams, .contact, .footer{
+.about, .skills, .contact, .footer{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -471,7 +487,8 @@ section .about-content .right {
   margin-top: 50px;
   }
 
-.work-content .work {
+.work {
+  height: 100%;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -535,25 +552,6 @@ section .about-content .right {
   height: 100%;
 }
 
-.portfolio .btn {
-  display: block;
-  position: relative;
-  top: -20vh;
-  margin: 0px auto;
-  width: fit-content;
-  border: 1px solid #111;
-  padding: 10px 50px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  transition: 0.5s;
-
-}
-
-.portfolio .btn:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #3bb8e2);
-  ;
-}
 
 /* teams styling start */
 .teams{
@@ -1145,7 +1143,7 @@ footer span a:hover{
 
 }
 
-@media (max-width:400px) {
+@media (max-width:768px) {
   .beta {
     padding-left: 0%;
     padding-right: 0%;
@@ -1201,31 +1199,42 @@ footer span a:hover{
 
   .navbar .menu {
     position: fixed;
-    height: 100cvh;
-    width: 100%;
-    left: 100%;
-    top: 0;
-    background: #111;
+    height: 60vh;
+    width: 300px;
+    background: linear-gradient(rgba(240, 59, 228, 0.6), #64e4f5);
+  ;
     text-align: center;
-    padding-top: 50px;
     transition: all 0.3s ease;
+    display: none;
   }
 
   .navbar .menu li {
     display: block;
     z-index: 999;
+    
   }
 
   .navbar .menu.active {
-    left: 0;
-  }
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
 
   .navbar .menu li a {
     display: inline-block;
-    margin: 16px 0;
     font-size: 20px;
 
   }
+  .navbar .menu li a:hover::after{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 
   p1 {
     font-size: 70%;
@@ -1241,6 +1250,13 @@ footer span a:hover{
 
   .menu-btn i {
     font-size: 100%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 
   .bi {
