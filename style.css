@@ -1109,12 +1109,11 @@ and (min-width:990px){
   }
 
 
-
-section .skills .title::before {
-  
+ .skills .title::before {
   width:200px;
-  
 }
+
+
 .skills .max-width{
   padding: 0 20%;
 }
