@@ -496,8 +496,6 @@ section .about-content .right {
 .portfolio .title::after {
   content: " what i do ";
 }
-
-
 .layer {
   text-align: justify;
 }
@@ -505,12 +503,8 @@ section .about-content .right {
 .portfolio .work-content .work {
   height: 400px;
   width: calc(33%);
-  background: rgb(238, 174, 202);
-  text-align: center;
-  border-radius: 20px;
   cursor: pointer;
 }
-
 .work {
   height: 100%;
   border-radius: 10px;
@@ -523,7 +517,6 @@ section .about-content .right {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  display: block;
   transition: transform 0.5s;
 }
 
@@ -545,7 +538,9 @@ section .about-content .right {
   text-align: center;
   font-size: 120%;
   transition: height 0.5s;
-
+}
+.layer p{
+  font-size: 90%;
 }
 
 .layer h3 {
@@ -843,6 +838,11 @@ label {
   margin: 2%;
 }
 
+
+
+
+
+
 /* footer section styling */
 
 
@@ -943,9 +943,14 @@ and (min-width:990px){
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  #work{
-    margin-left: 50%;
+
+#work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
+
 .navbar .logo a {
   font-size: 150%;
   font-weight: 700;
