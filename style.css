@@ -1106,11 +1106,6 @@ and (min-width:990px){
 
   .about .about-content .right {
     flex: 100%;
-  }
-
-
- .skills .title::after {
-  width:200px;
 }
 
 
