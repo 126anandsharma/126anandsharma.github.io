@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* border: 2px solid blue; */
+  
 }
 
 a {
@@ -83,6 +85,7 @@ html {
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
   z-index: 999;
+  
 }
 
 .sticky {
@@ -159,6 +162,7 @@ html {
 
 .navbar.sticky .logo a span {
   color: #fff;
+  
 }
 
 .menu-btn i {
@@ -172,7 +176,9 @@ html {
 
 
 
-
+.downloadcv{
+  pointer-events: none;
+}
 
 
 
@@ -360,12 +366,12 @@ section .title {
 section .title::before {
   content: "";
   position: absolute;
-  bottom: 0px;
+  /* bottom: 0px;
   left: 50%;
   width: 180px;
   height: 3px;
   background: grey;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 section .title::after {
@@ -375,8 +381,8 @@ section .title::after {
   font-size: 60%;
   color: white;
   padding: 0 5px;
+  border: 2px solid rgb(77, 214, 214);
   border-radius: 6px;
-  background: gray;
   transform: translateX(-50%);
 }
 
@@ -407,8 +413,6 @@ section .about-content .right {
 }
 
 .about .about-content .right .text {
-
-  font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
 
@@ -458,7 +462,7 @@ section .about-content .right {
   height: 300px;
   width: calc(33%);
   background: rgb(238, 174, 202);
-  background: linear-gradient(180deg, rgba(238, 174, 202, 1) 13%, rgba(46, 174, 189, 1) 96%);
+  background: rgba(46, 174, 189, 1);
   ;
   text-align: center;
   border-radius: 50px;
@@ -482,7 +486,6 @@ section .about-content .right {
 
 .skills .skil-content .card i {
   font-size: 50px;
-  color: aqua;
 }
 
 .skills .skil-content .card .text {
@@ -871,10 +874,8 @@ footer span a:hover {
 
 
 
-
-
 /* Styles for desktop devices */
-@media screen and (max-width: 1367px) and
+@media screen and (max-width: 3100px) and
 (min-width:1024px) {
 
   /* CSS rules for desktop devices */
@@ -943,12 +944,9 @@ and (min-width:990px){
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-
-#work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  #work{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar .logo a {
@@ -966,7 +964,7 @@ and (min-width:990px){
 
 
 /* ..........for mobile device..... */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .beta {
     padding-left: 0%;
     padding-right: 0%;
@@ -1084,6 +1082,7 @@ and (min-width:990px){
     align-items: flex-end;
   }
 
+
   .bi {
     font-size: 140%;
   }
@@ -1108,7 +1107,7 @@ and (min-width:990px){
     flex: 100%;
   }
   .skills .title::after{
-    width: 60%;
+    width: 55%;
   }
 
 .skills .max-width{
@@ -1171,6 +1170,8 @@ and (min-width:990px){
 
 .contact-form {
   width: 60%;
+  padding: 5% 0 0 0;
+  margin-left: 2%;
 }
 
 .contact .contact-content .column {
