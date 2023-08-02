@@ -375,4 +375,9 @@ body {
   .slide-1 > img {
     right: -110px;
   }
+  .slider{
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
 }
