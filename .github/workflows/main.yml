@@ -1,0 +1,24 @@
+name: PHP Composer
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        extensions: mbstring
+        coverage: none
+
+    - name: Install Composer dependencies
+      run: composer install
+
+    - name: Run script
+      run: php php/send-email.php
